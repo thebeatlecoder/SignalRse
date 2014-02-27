@@ -1,6 +1,6 @@
 #SignalRse
 
-I wrote this code for a blog post called [SignalRse: Load balancing the shit out of SignalR](http://scottcodes.net/blog). It's just a very
+I wrote this code for a blog post called [SignalRse: Load balancing the shit out of SignalR](http://scottcodes.net/signalr-load-balancing). It's just a very
 trivial example of how you can get SignalR up and running, and then scale it out horizontally using a SQL Server backplane.
 
 There's currently no automated setup for the code, so to try it out you'll need to:
