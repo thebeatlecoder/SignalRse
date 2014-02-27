@@ -1,0 +1,26 @@
+﻿@using ScaleOut.CustomerQuery.Contracts;
+
+@model IEnumerable<Customer>
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+<table>
+    <tr>
+        <td>Forename</td>
+        <td>Surname</td>
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>
+                @customer.Forename
+            </td>
+            <td id="surname-@customer.Id">
+                @customer.Surname
+            </td>
+        </tr>
+    }
+</table>
